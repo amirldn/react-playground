@@ -59,6 +59,8 @@ const Counter = () => {
 
              <button onClick={() => setCount(count+1)}>Increase</button>
              <button onClick={() => setCount(count-1)}>Decrease</button>
+             <button onClick={() => setCount(count*2)}>Multiply by 2</button>
+             <button onClick={() => setCount(Math.floor(Math.random() * 100))}>Randomise</button>
              {/* using this function way instead, it calls an empty function which immediately references the function after the => so only performed on click */}
 
         </React.Fragment>
